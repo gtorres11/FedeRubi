@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* width: 90%; estaba tanto en body como en container eso hacia que este al 90% del 90% y nos daba mas margen derecho */
+    background-color: #040304;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23743002' fill-opacity='0.56'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color: white;
+    font-size: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    border: blueviolet solid 5px;
+    text-align: center;
+}
+
+.nav-main {
+    display: flex;
+    margin: 10px;
+    border: orange solid 5px;
+    align-items: center;
+    height: 80px;
+}
+
+.nav-brand {
+    width: 80px;
+}
+
+.nav-main ul {
+    display: flex;
+    margin-left: 20px;
+    padding: 20px;
+    border: green solid 5px;
+}
+
+ul {
+    list-style: none;
+}
+li {
+    padding: 20px 40px; 
+    border: yellow solid 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    border: blue solid 5px;
+}
+
+.presentacion {
+    background-image: url(.back);
+    margin: auto;
+    overflow: hidden;
+}
+
+.presentacion ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: ease-in;
+}
+
+.presentacion li {
+    width: 100%;
+}
+
+.presentacion img {
+width: 100%;
+height: 50%;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left:0;}
+
+    25% {margin-left:-100%;}
+    45% {margin-left:-100%;}
+
+    50% {margin-left:-200%;}
+    70% {margin-left:-200%;}
+
+    75% {margin-left:-300%;}
+    100% {margin-left:-300%;}
+}
