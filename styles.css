@@ -6,87 +6,255 @@
 
 body {
     /* width: 90%; estaba tanto en body como en container eso hacia que este al 90% del 90% y nos daba mas margen derecho */
-    background-color: #040304;
-    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23743002' fill-opacity='0.56'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-color: white;
+    background-image: url(img/fondo5.jpeg);
+    background-size: 100%;
+
     color: white;
     font-size: 20px;
 }
 
+.nav-menu li a {
+    background-colo;
+    
+}
 .container {
     width: 90%;
     margin: auto;
-    border: blueviolet solid 5px;
+    borde: blueviolet solid 5px;
     text-align: center;
 }
 
 .nav-main {
     display: flex;
     margin: 10px;
-    border: orange solid 5px;
+    borde: orange solid 5px;
     align-items: center;
     height: 80px;
+    padding: 65px 0;
 }
 
 .nav-brand {
-    width: 80px;
+    width: 120px;
 }
 
 .nav-main ul {
     display: flex;
     margin-left: 20px;
     padding: 20px;
-    border: green solid 5px;
+    borde: green solid 5px;
+}
+
+.nav-main ul li {
+    display: flex;
+    margin-left: 20px;
+    padding: 20px;
+    borde: green solid 5px;
+    font-size: 30px;
 }
 
 ul {
     list-style: none;
 }
-li {
-    padding: 20px 40px; 
-    border: yellow solid 5px;
-}
 
-a {
+.nav-main ul li a {
+    display: inline-block;
+    position: relative;
+    color:black;
     text-decoration: none;
-    color: white;
-    justify-content: center;
-    border: blue solid 5px;
 }
 
-.presentacion {
+.nav-main ul li a:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all .8s;
+}
+
+.nav-main ul li a:hover:after {
+    width: 100%;
+    background:black;
+}
+
+hr {
+    margin-bottom: 40px;
+    border: 1px solid black;    
+}
+
+.banner1 {
     background-image: url(.back);
+    background-size: 100% 100%;
     margin: auto;
     overflow: hidden;
+    height: 650px;
+    borde: 3px solid red;
+    animation: change 20s infinite alternate;
+    animation-timing-function: ease-in;
+    margin-bottom: 30px;
 }
 
-.presentacion ul {
+.banner1 h1 {
+    opacity: 0.2;
+    font-size: 150px;
+    font-family: 'Merriweather', serif;
+    margin: 250px;
+    text-align: center;
+
+}
+.banner1 ul {
     display: flex;
     padding: 0;
     width: 400%;
-
-    animation: cambio 20s infinite alternate;
-    animation-timing-function: ease-in;
+    
 }
 
-.presentacion li {
+.banner1 li {
     width: 100%;
 }
 
-.presentacion img {
+.banner1 img {
 width: 100%;
 height: 50%;
 }
 
-@keyframes cambio {
-    0% {margin-left: 0;}
-    20% {margin-left:0;}
+@keyframes change {
+    0%, 20% {
+        background-image: url(img/rubiDesierto.jpeg);
+    }
+    25%, 45% {
+        background-image: url(img/rubiCancha.jpeg);
+    }
+    50%, 70% {
+        background-image: url(img/rubiCamisetas.jpeg);
+    }
+    75%, 100% {
+        background-image: url(img/rubiMadrid.jpeg);
+    }
+}
 
-    25% {margin-left:-100%;}
-    45% {margin-left:-100%;}
+.banner2 {
+    borde: 2px solid red;
+    margin: auto;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(63, 63, 63, 0.767);
+    background-size: 100% 100%;
+    margin-bottom: 30px;
+    
+}
 
-    50% {margin-left:-200%;}
-    70% {margin-left:-200%;}
+.banner2 h2 {
+    font-size: 90px;
+    font-style: bold 700 italic;
+    font-family: 'Merriweather', serif;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 35px;
+}
 
-    75% {margin-left:-300%;}
-    100% {margin-left:-300%;}
+.banner2 p {
+    font-size: 21px;
+    margin: auto;
+    padding: 10px 150px;
+    font-style: 400;
+    font-family: 'Merriweather', serif;
+    color:white;
+}
+
+.banner3pre {
+    height: 190px;
+    background-color: rgba(63, 63, 63, 0.767);
+    font-size: 80px;
+    font-style: bold 700 italic;
+    font-family: 'Merriweather', serif;
+}
+.banner3 {
+    borde: 2px solid red;
+    height: 1300px;
+    background-color: rgba(63, 63, 63, 0.767);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px  ;
+    padding: 20px 20px;
+    margin-bottom: 100px;
+}
+
+.banner3 h3 {
+    font-size: 30px;
+    font-style: bold 700 italic;
+    font-family: 'Merriweather', serif;
+}
+
+.banner3 p {
+    padding-top: 0px;
+    font-size: 15px;
+    font-style: 400;
+    font-family: 'Merriweather', serif;
+    padding-top: 20px;
+}
+
+.banner3 img {
+    width: 100%;
+    height: 180px;
+}
+.banner4 {
+    borde: 2px solid red;
+    margin: auto;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(63, 63, 63, 0.767);
+    background-size: 100% 100%;
+}
+
+.banner4 h2 {
+    font-size: 50px;
+    font-style: bold 700 italic;
+    font-family: 'Merriweather', serif;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.banner4 p {
+    font-size: 20px;
+    margin: auto;
+    padding: 10px;
+    font-style: 400;
+    font-family: 'Merriweather', serif;
+}
+
+.banner4 a i {
+    font-size: 3rem;
+    width: 100px;
+    margin: 10px 40px;
+    color: white;
+}
+
+.banner4 a {
+    display: inline-block;
+    position: relative;
+    color:black;
+    text-decoration: none;
+}
+
+.banner4 a:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all .8s;
+}
+
+.banner4 a:hover:after {
+    width: 50%;
+    background:white;
+}
+
+footer {
+    margin-top: 100px;
 }
