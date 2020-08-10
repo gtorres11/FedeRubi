@@ -309,21 +309,12 @@ footer {
 
     #last-div {
         grid-column: span 2;
-<<<<<<< HEAD
     }
 
     #last-div img {
         width: 50%;
     }
 
-=======
-    }
-
-    #last-div img {
-        width: 50%;
-    }
-
->>>>>>> 2705c562c873d1ed71e56f4287edd8a6859a8232
     .body {
         width: 100%;
     }
@@ -354,11 +345,7 @@ footer {
     
     .nav-main ul li a:hover:after {
         width: 100%;
-<<<<<<< HEAD
         background: transparent;
-=======
-        background:white;
->>>>>>> 2705c562c873d1ed71e56f4287edd8a6859a8232
     }
 
     .nav-main ul.nav-menu.show {
@@ -435,11 +422,8 @@ footer {
         margin: 15px;
         justify-content: center;
         align-items: center;
-<<<<<<< HEAD
         padding: 20px;
 
-=======
->>>>>>> 2705c562c873d1ed71e56f4287edd8a6859a8232
     }
     
     .nav-main ul.nav-menu li a {
