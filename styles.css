@@ -84,7 +84,7 @@ hr {
     overflow: hidden;
     height: auto;
     width: auto;
-    animation: change 20s infinite alternate;
+    animation: change 30s infinite alternate;
     animation-timing-function: ease-in;
     margin-bottom: 30px;
 }
@@ -114,25 +114,32 @@ height: 50%;
 }
 
 @keyframes change {
-    0%, 20% {
+    0%, 10% {
         background-image: url(img/rubiDesierto.jpeg);
     }
-    25%, 45% {
+    15%, 25% {
         background-image: url(img/rubiCancha.jpeg);
     }
-    50%, 70% {
+    30%, 40% {
         background-image: url(img/rubiCamisetas.jpeg);
     }
-    75%, 100% {
+    45%, 55% {
         background-image: url(img/rubiMadrid.jpeg);
+    }
+    60%, 70% {
+        background-image: url(img/rubiaruba.jpeg);
+    }
+    75%, 85% {    
+        background-image: url(img/rubiplaya.jpeg);
+    }
+    90%, 100% {    
+        background-image: url(img/rubidubai.jpeg);
     }
 }
 
 .banner2 {
     margin: auto;
     height: auto;
-    justify-content: center;
-    align-items: center;
     background-color: rgba(63, 63, 63, 0.767);
     background-size: 100% 100%;
     margin-bottom: 30px;
@@ -151,11 +158,11 @@ height: 50%;
 .banner2 p {
     font-size: 21px;
     margin: auto;
-    padding: 10px 30px;
+    padding: 10px 0px;
     font-style: 400;
     font-family: 'Merriweather', serif;
     color:white;
-    width: 80%;
+    width: 95%;
 }
 
 .banner3pre {
@@ -204,6 +211,7 @@ height: 50%;
     width: 100%;
     height: 180px;
 }
+
 .banner4 {
     margin: auto;
     height: auto;
@@ -337,7 +345,7 @@ footer {
     
     .nav-main ul li a:hover:after {
         width: 100%;
-        background:white;
+        background: transparent;
     }
 
     .nav-main ul.nav-menu.show {
@@ -414,12 +422,22 @@ footer {
         margin: 15px;
         justify-content: center;
         align-items: center;
+        padding: 20px;
+
     }
     
     .nav-main ul.nav-menu li a {
-        color: white;
+        color:white;
         font-size: 15px;
     }
 
+    .banner4 a:hover:after {
+        width: 50%;
+        background:transparent;
+    }
 
+    .nav-main ul li a:hover:after {
+        width: 100%;
+        background: transparent;
+    }
 }
